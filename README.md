@@ -39,7 +39,7 @@ isset($array); // true
 
 Array merge
 ```php
-$arrOne = array(''=>'');
+$arrOne = array(''=>''); // datatype: boolean
 $arrTwo = array('9'=>'apple', '15'=>'banana', '20'=>'grapefruit');
 $x = array_merge($arrOne, $arrTwo); // $x = array(''=>'', 0=>'apple', 1=>'banana', 2=>'grapefruit');
 ```
