@@ -39,14 +39,14 @@ isset($array); // true
 
 Array merge
 ```php
-$arrOne = array(''=>''); // datatype: boolean
+$arrOne = array(''=>''); 
 $arrTwo = array('9'=>'apple', '15'=>'banana', '20'=>'grapefruit');
 $x = array_merge($arrOne, $arrTwo); // $x = array(''=>'', 0=>'apple', 1=>'banana', 2=>'grapefruit');
 ```
 
 Boolean
 ```php
-$bool = FALSE;
+$bool = FALSE; // datatype: boolean
 empty($bool); // true
 is_null($bool); // false
 isset($bool); // true
