@@ -103,3 +103,24 @@ $x = &$a;
 $b = ++$a;
 echo $b; // 2
 ```
+
+Null coalescing operator (PHP7)
+```php
+$a = $_GET['a'] ?? 'b'; // return $_GET['a'] if $_GET['a'] exists and is not null, b otherwise
+$a = $_GET['a'] ?? $_GET['b'] ?? 'c'; // it can be chained
+```
+
+Spaceship operator (PHP7)
+```php
+echo 1 <=> 1; // 0
+echo 1 <=> 2; // -1
+echo 2 <=> 1; // 1
+
+echo 1.5 <=> 1.5; // 0
+echo 1.5 <=> 2.5; // -1
+echo 2.5 <=> 1.5; // 1
+ 
+echo "a" <=> "a"; // 0
+echo "a" <=> "b"; // -1
+echo "b" <=> "a"; // 1
+```
